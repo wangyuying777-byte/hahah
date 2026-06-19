@@ -14,6 +14,7 @@
 | ② 更高的首次提交评分可能来自 selection（不同类型 solver 进入 NOP）而非 effort 响应 | **Survey 2 把"是否参赛"固定为"你已经在比赛中"**，在同一参赛者内部测 effort 意向，从设计上剥离 selection；**Survey 1** 则专门测 selection（谁会被劝退） |
 | ③ 为什么不同 NOP 奖金就意味着更高期望？也许只是 seeker 更有钱/更慷慨 | 同时测量竞争性构念 **perceived seeker generosity / budget（PSG）**，并加入**金钱控制条件**（标准高档位 \$280）；做**并行多重中介**，证明驱动 effort 的是 PSE 而非 PSG |
 | ④ 机制章节把 behavioral outcome 与 psychological process 混为一谈 | vignette 中**奖金几乎相等（\$190 vs \$195）**，把"命名行为"与"金额"解耦；用中介+调节模型把"感知→行为"链条显性化 |
+| ⑤（另一条意见）排除 attraction 的检验（6.3 lower-NOP）不干净：NOP-低奖金可能只是因为"奖金太低"而非"NOP 传递期望而非吸引力"；应在**奖金完全相同**下比较 | 加入**同价对比条件（标准 \$280 vs NOP \$280，奖金严格相等）**，并**直接测量 attraction 构念（PDA）与预计参赛人数**；做含 attraction 的**并行中介**——这是观察数据/RDD 做不到、而实验能给的"干净识别"。详见 §3.4 |
 
 ---
 
@@ -51,6 +52,21 @@
 区别于"期望"机制，避免把竞争效应误算成期望效应。
 - COMP1. The competition among solvers in this contest is intense.
 - COMP2. Many strong solvers are likely to enter this contest.
+
+### 1.4b 竞争性构念（替代解释）：Perceived Distinctiveness / Attraction（PDA，感知吸引力/醒目度）
+直接把审稿人在"排除 attraction"一节（6.3）担心的**注意力/吸引力机制**操作化：NOP 标签是否只是让任务"显得特别、吸引眼球"，从而（按 attraction 逻辑）吸引更多人。与 PSG（慷慨）、PSE（期望）都不同，必须单列。
+- PDA1. This contest stands out and catches my attention compared with ordinary contests.
+- PDA2. This contest looks more interesting / appealing to enter.
+- PDA3. The custom/named prize makes the contest feel special or eye-catching.
+- PDA4. I would be more curious to click into this contest than a standard one.
+
+### 1.4c Expected Participation Volume（EPART，预计会吸引的参赛人数）
+attraction 机制的**行为预测**是"吸引更多人"；据此直接测被试对参赛规模的预期。
+- EPART1. This contest will attract more solvers than a typical contest. (1–7)
+- EPART2（数量估计）：About how many solvers do you think this contest will attract in total? ___ (0–500)
+- EPART3. Many high-skill / top designers will be drawn to enter this contest. (1–7)
+
+> （中文）核心判别：attraction 机制预测 NOP→PDA↑、EPART↑（更多人、含高手被吸引）；expectation 机制预测 NOP→PSE↑、难度↑、努力↑，但**高能力者参赛意向反而下降、总参赛人数不增**。两者对"参与"的预测方向相反，恰好可在**同价**条件下相互证伪。
 
 ### 1.5 Survey 1 专用：Participation / Entry Intention（参赛意向）
 - ENTRY1. I would choose to enter this contest. （单条件评分式）
@@ -148,7 +164,7 @@
 
 ### 3.2 测量顺序（Survey 2）
 1. 情境呈现 + REAL1、MC1/MC2、ATT1。
-2. **感知**：PSE、PSG、COMP（先测感知，后测努力意向，符合机制因果序）。
+2. **感知**：PSE、PSG、**PDA（吸引力）、EPART（预计参赛人数）**、COMP（先测感知，后测努力意向，符合机制因果序）。
 3. **努力**：EFF1–EFF5、EFF_QTY、EFF_TIME。
 4. **努力归因**：ATR_exp / ATR_bar / ATR_money / ATR_nofree + 开放题 OE_why。
 5. 个体能力 ABIL_*、人口学。
@@ -163,6 +179,29 @@
 - S2-H5（归因）：C2 下 ATR_exp / ATR_bar / ATR_nofree 评分高于 ATR_money；开放题文本中"高标准/必须配得上/no free lunch"类编码占比在 NOP 显著更高。
 - S2-H6（与竞争机制区分）：控制 COMP 后，PSE→Effort 仍显著；且更高奖金（C3）若提高 COMP 反而压努力，与 PSE 路径方向相反，进一步分离两套机制。
 
+### 3.4 排除 attraction 的"同价对比"模块（直接回应审稿人 6.3）
+
+**问题回顾**：稿件 6.3 用 lower-NOP（\$235–\$280）vs 标准 \$280 来排除 attraction，但**同时变动了"标签"与"奖金高低"**，因此 lower-NOP 的零/负结果无法区分"NOP 非吸引力信号" vs "吸引力被低奖金抵消"。审稿人要的是**奖金完全相同、只切换 NOP 标签**的对照（同档同价，或 tier 阈值 RDD）。观察数据与 RDD 都做不到，但 vignette 可以。
+
+**设计：在 Survey 2 中增加一对"奖金严格相等"条件（between-subjects，建议作为独立分析模块或单独一项研究 Study 2B）。**
+
+| 条件 | 描述（奖金数字完全相同） | 作用 |
+| --- | --- | --- |
+| **E1 标准同价** | 这是标准档比赛，prize = **\$280**（Standard Tier B） | 同价基线 |
+| **E2 NOP 同价** | seeker **命名了自己的奖金 = \$280**（Custom/Named prize 标签），数额恰与标准 Tier B 相同 | 仅切换"命名"标签，**奖金一分不差** |
+
+- 两条件奖金都是 **\$280**，brief、时长、竞争人数、交付物完全一致；**唯一差异是 NOP 标签**。这就是审稿人所要"NOP at exactly the same prize as the standard tier"的实验等价物，并且**根除了"prize too low"的混淆**（奖金根本没降）。
+- 测量同 §3.2，**重点纳入 PDA、EPART**（attraction 的直接测量与行为预测）以及 PSE、Effort。
+- 情境用 §3.1 开场，仅替换奖金描述：E1 = "the **standard \$280** prize (Standard Tier B)"；E2 = "the seeker **named their own custom prize of \$280**（恰好与标准 Tier B 相同），marked with a 'Custom prize' tag"。
+
+**关键预测（adjudication）——在奖金严格相等下**：
+- attraction 解释成立的话：E2 应使 **PDA↑、EPART↑**（更吸引、预计更多人/更多高手参赛），且参赛意向↑。
+- expectation 解释（本文）成立的话：E2 使 **PSE↑、感知难度↑、Effort↑**，而 **PDA / EPART 不显著上升甚至下降**，高能力者参赛意向不升反降。
+- **S2-H7（核心反驳 attraction）**：E2 vs E1 上，PSE↑ 且 Effort↑，但 PDA、EPART 无显著差异；**含 attraction 的并行三中介**（PSE / PSG / PDA 同时入模，PROCESS Model 4）显示——只有 **NOP→PSE→Effort** 间接效应显著，**NOP→PDA→Effort** 与 **NOP→PSG→Effort** 不显著。
+- 因为奖金被钉死在 \$280，**任何效应都不可能源自"钱更多/更少"**，从而精确切割 attraction 与 expectation，正面闭合审稿人的逻辑缺口。
+
+> （可选）**复刻并解释 6.3 的混淆**：再加一格 E3 = NOP \$235（低于标准 \$280）。预测：相对 E1/E2，E3 的 **PDA/EPART 并不更高**（标签没带来额外吸引），但因奖金更低，Effort 下降——这恰好"在受控环境里重演"了稿件中 lower-NOP 的现象，并**用感知数据说明**其根源是低奖金抑制努力、而非 attraction 在起作用。这把审稿人担心的混淆当场拆解给审稿人看。
+
 ---
 
 ## 4. 抽样、招募与样本量（Sampling）
@@ -173,6 +212,7 @@
   - 中介分析（bootstrap 间接效应，中等效应）建议**每组 ≥ 150–200**。
   - Survey 1：Part A 两组 → 总 n ≈ 350–450（留出剔除）。
   - Survey 2：三组（C1/C2/C3）→ 总 n ≈ 500–650；若含 C4 则 ≈ 650–850。
+  - **§3.4 同价对比模块（E1/E2）**：两组 → 额外 n ≈ 350–450；若含 E3 则 ≈ 500–650。可与 Survey 2 主体合并为一个多臂随机实验统一招募。
   - 建议先做小规模 pilot（每组 ~30）做量表信度与 vignette 真实性检验。
 - **质量控制**：注意力检验（ATT1）、操纵检验（MC1）、最短作答时长、真实性下限（REAL1≥4 方进入主分析，并报告敏感性）。
 
@@ -193,7 +233,11 @@
   - Survey 2：NOP → PSE → Effort。
   - **并行双中介**：同时放入 PSE 与 PSG，比较两条间接路径，证明 PSE 路径显著、PSG 路径不显著（核心反驳替代解释）。
 - **调节中介**（PROCESS Model 7/14，Survey 1 为主）：ABIL 调节 PSE→Entry（high-ability 被劝退更强），对齐论文 selection 发现。
-- **质性补充**：对 OE_why 开放文本做编码（期望/高标准 vs 金钱/慷慨 vs 竞争），报告各主题频次随条件的变化，呼应审稿人建议的"textual analysis of solver communications"。
+- **排除 attraction（§3.4 同价模块，回应 6.3）**：
+  - 在**奖金严格相等（E1 \$280 vs E2 \$280）**下做 t / ANOVA：检验 PSE↑、Effort↑ 是否成立，同时 PDA、EPART 是否**无显著差异**。
+  - **含 attraction 的并行三中介**（PSE / PSG / PDA 同时入模）：证明只有 NOP→PSE→Effort 间接效应显著，NOP→PDA→Effort、NOP→PSG→Effort 不显著——在奖金恒定下精确切割 attraction 与 expectation。
+  - 判别效度扩展到三构念（PSE / PSG / PDA 的 HTMT、Fornell–Larcker），证明 attraction 与 expectation 是可区分构念。
+- **质性补充**：对 OE_why 开放文本做编码（期望/高标准 vs 金钱/慷慨 vs **吸引/醒目** vs 竞争），报告各主题频次随条件的变化，呼应审稿人建议的"textual analysis of solver communications"。
 
 ### 5.3 结果如何写回论文（mapping）
 | 论文原二手数据发现 | 本 survey 提供的直接证据 |
@@ -203,6 +247,7 @@
 | solver_first_rating↑（Table 4/5，effort） | Survey 2：参赛固定下，NOP→PSE↑→effort↑、首次提交质量意向↑ |
 | solver_min/max_rating↑（effort 全域上移） | Survey 2：EFF_QTY/EFF_TIME/最优努力意向↑ |
 | 排除"仅奖金"解释（Table 6） | Survey 2 的 C3 金钱控制条件 + PSE/PSG 判别 + 并行中介，直接在感知层证明"是命名传递期望，不是钱" |
+| 排除 attraction 解释（Table 7，6.3 lower-NOP，被审稿人质疑混淆） | Survey 2 §3.4 的**同价对比（\$280=\$280，只切换 NOP 标签）** + 直接测 PDA/EPART + 含 attraction 的并行三中介；奖金被钉死，根除"prize too low"混淆，给出观察数据/RDD 给不了的干净识别 |
 
 ---
 
@@ -211,8 +256,9 @@
 1. **直接测量了 perception**（PSE 多题项量表），不再是从行为反推。
 2. **把 selection 与 effort 分开测**：Survey 1 测谁被劝退，Survey 2 把"已参赛"设为前提、纯测努力，从设计上排除 selection 解释首次提交评分。
 3. **正面拆解"只是钱多/更慷慨"**：金额近乎相等（\$190 vs \$195）+ 标准高档金钱控制条件（\$280）+ PSE/PSG 判别效度 + 并行双中介，三重证据表明驱动效应的是"命名→更高期望"而非"更多预算→更慷慨"。
-4. **质性文本编码**回应审稿人"survey or textual analysis"的具体建议。
-5. **可与平台真实 solver 能力数据对齐**（top 25%），与论文实证口径一致，增强外部效度。
+4. **正面排除 attraction（回应 6.3）**：在**奖金严格相等**下只切换 NOP 标签（\$280=\$280），并直接测量吸引力(PDA)与预计参赛人数(EPART)；这是观察数据与 RDD 都给不了、唯实验可得的"干净识别"，从设计上消除审稿人指出的"prize too low"混淆。
+5. **质性文本编码**回应审稿人"survey or textual analysis"的具体建议。
+6. **可与平台真实 solver 能力数据对齐**（top 25%），与论文实证口径一致，增强外部效度。
 
 ---
 
@@ -225,6 +271,12 @@
 > **Your situation.** You have **already entered** this contest. You are now competing against about **100 other solvers**. Please answer the following questions about how you perceive this contest and how you would approach it.
 
 （C1 把第二段替换为 "the seeker is offering the **standard \$190** prize (Standard tier)"；C3 替换为 "the **standard \$280** prize (Standard tier B)"；其余完全一致。）
+
+**§3.4 同价对比模块文案（奖金严格相等，仅切换标签）**：
+> **E1（标准 \$280）**：…the seeker is offering the **standard \$280 prize (Standard Tier B)**…
+> **E2（NOP \$280）**：…rather than using a standard tier, the seeker has **named their own custom prize of \$280** (the platform marks this contest with a "Custom prize" tag)…
+> （E3 可选：…named their own custom prize of **\$235**…）
+> 两条件奖金数字一致（\$280），其余文字逐字相同，唯一差异是是否带 "Custom prize" 命名标签。
 
 ## 附录 B：Survey 1 Part B 同屏对比版式（示意）
 
